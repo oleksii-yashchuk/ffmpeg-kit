@@ -14,9 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc      = true
   s.static_framework  = true
 
-  s.source       = { :git => "https://github.com/oleksii-yashchuk/ffmpeg-kit.git", :tag => "react.native.v#{s.version}" }
-
-  s.default_subspec   = 'https'
+  s.source       = { :http => "https://github.com/oleksii-yashchuk/ffmpeg-kit/releases/download/prebuild/min-gpl.zip" }
 
   s.dependency "React-Core"
 
